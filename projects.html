@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAROO | مشاريع تطوير الأنظمة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-red: #d32f2f; --bg-black: #0a0a0a; --card-bg: #141414; --text-gray: #a0a0a0; --pure-white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-black); color: var(--pure-white); }
+        header { height: 40vh; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400') center/cover; display: flex; justify-content: center; align-items: center; border-bottom: 2px solid var(--primary-red); }
+        nav { padding: 20px 8%; display: flex; justify-content: space-between; background: #000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #fff; text-decoration: none; }
+        .logo span { color: var(--primary-red); }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 50px 10%; }
+        .project-card { background: var(--card-bg); border: 1px solid #222; border-radius: 10px; overflow: hidden; text-decoration: none; color: inherit; transition: 0.3s; }
+        .project-card:hover { border-color: var(--primary-red); transform: translateY(-5px); }
+        .project-img { height: 180px; background-size: cover; background-position: center; }
+        .project-info { padding: 20px; text-align: center; }
+        footer { text-align: center; padding: 30px; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">MA<span>ROO</span></a>
+        <a href="index.html" style="color: #fff; text-decoration: none;">الرئيسية</a>
+    </nav>
+    <header><h1>مشاريعنا الذكية</h1></header>
+
+    <div class="grid-container">
+        <a href="inventory.html" class="project-card">
+            <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=400');"></div>
+            <div class="project-info">
+                <h3>نظام إدارة المخازن</h3>
+                <p>اضغط لاستكشاف تفاصيل النظام</p>
+            </div>
+        </a>
+        
+        <div class="project-card"><div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=400');"></div><div class="project-info"><h3>المتجر الإلكتروني</h3><p>قريباً..</p></div></div>
+        <div class="project-card"><div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=400');"></div><div class="project-info"><h3>إدارة المطاعم</h3><p>قريباً..</p></div></div>
+    </div>
+
+    <footer>&copy; 2026 MAROO</footer>
+</body>
+</html>
